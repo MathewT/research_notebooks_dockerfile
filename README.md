@@ -9,6 +9,6 @@ docker build . -t <prefix>/research_notebooks
 ## Run the image
 
 ```bash
-docker run -i -t -v $PWD/notebooks:/notebooks   --rm -p 8888:8888 <prefix>/anaconda
+docker run -i -t -v $PWD/notebooks:/notebooks   --rm -p 8888:8888 --name research_notebooks <prefix>/anaconda
 ```
 
